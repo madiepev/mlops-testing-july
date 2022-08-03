@@ -51,7 +51,7 @@ def process_data(df):
 def train_model(reg_rate, X_train, X_test, y_train, y_test):
     # train model
     LogisticRegression(C=1/reg_rate,
-                        solver="liblinear").fit(X_train, y_train)
+                       solver="liblinear").fit(X_train, y_train)
 
 
 def parse_args():
